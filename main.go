@@ -185,7 +185,7 @@ func installFalco() {
 		log.Fatalln(err)
 	}
 
-	cmd := "helm install falco falcosecurity/falco --set falcosidekick.enabled=true --set falcosidekick.webui.enabled=true -n falco --set \"extraArgs={-U}\" --set kubernetesSupport.enableNodeFilter=false --set falcosidekick.replicaCount=1 --set falcosidekick.webui.replicaCount=1 --create-namespace"
+	cmd := "helm install falco falcosecurity/falco --set falcosidekick.enabled=true --set falcosidekick.webui.enabled=true -n falco --set tty=true --set kubernetesSupport.enableNodeFilter=false --set falcosidekick.replicaCount=1 --set falcosidekick.webui.replicaCount=1 --create-namespace"
 	if _, err := script.Exec(cmd).Stdout(); err != nil {
 		log.Fatalln(err)
 	}

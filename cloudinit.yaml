@@ -1,0 +1,7 @@
+users:
+- name: thomas
+  groups: sudo
+  sudo: ALL=(ALL) NOPASSWD:ALL
+  ssh_authorized_keys: 
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDLAV1V77Od0cZvm1XJ9X+AwwF1Cn3L74/c/iRHpCnG6wzx1MDb+maDZo16E5n1Fj7ePFI2YJot9uCiFfqA/ygcrPKs3moBBjGiAbuyEYTWWgRvQ92mcsp0cUVrBjP8JGFxSKXvDEAsTl68SaZz3PX49sl01YORgnz5CergkVAY5w==
+
